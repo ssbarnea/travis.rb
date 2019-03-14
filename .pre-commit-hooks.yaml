@@ -1,0 +1,11 @@
+---
+
+# For use with pre-commit.
+# See usage instructions at http://pre-commit.com
+
+-   id: travis
+    name: travis-lint
+    description: This hook runs travis lint.
+    entry: travis lint -x
+    language: ruby
+    files: \.travis\.yml$
